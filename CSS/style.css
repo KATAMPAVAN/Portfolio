@@ -54,7 +54,7 @@ body ul{
 /* Illustration SVG CSS */
 .illus{
     position: absolute;
-    right: 0;
+    right: 0%;
     width: 300px;
     /* top: 50px; */
 }
@@ -202,6 +202,7 @@ body ul{
 .about .abtBtn{
     width: 200px;
     text-align: center;
+    margin: 10px;
     padding: 15px;
     border: 3.5px solid var(--yellow);
     background-color: var(--light);
@@ -213,6 +214,7 @@ body ul{
 }
 .about .abtBtn:hover{
     background-color: var(--yellow);
+    transform: scale(1.07);
 }
 
 
@@ -224,10 +226,10 @@ body ul{
     margin-top: 20px;  
 }
 .skills .cardRow .card{
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
     box-shadow: var(--darkShadowLg);
-    margin: 0 10px 10px 10px;
+    margin: 50px 50px 10px 10px;
     padding: 50px;
     border-radius: 8px;
     display: flex;
@@ -237,6 +239,7 @@ body ul{
     position: relative;
     overflow:hidden;
     cursor: pointer;
+    text-align: center;
 }
 .skills .cardRow .card .cardIcon .material-icons{
     font-size: 64px;
@@ -267,12 +270,13 @@ font-size: 30px;
 /* Projects CSS */
 .projects .cardRow .card img{
     width: 100%;
+    height: 100%;
     box-shadow: var(--darkShadowLg);
     border-radius: 8px;
     transition: all 200ms ease-in-out;
 }
 .projects .cardRow{
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -280,12 +284,19 @@ font-size: 30px;
     margin-left: -15px;
 }
 .projects .cardRow .card{
-    width: 45%;
+    width: 90%;
     margin: 10px;
+    padding: 80px;
+}
+.projects .cardRow .card .project-head{
+    padding: 20px;
+    text-align: center;
+
 }
 .projects .cardRow .card:hover img{
     transform: scale(1.02);
     box-shadow: 2px 2px #ffffff2c;
+    
 }
 
 /* Contact CSS */
